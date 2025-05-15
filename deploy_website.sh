@@ -13,7 +13,7 @@ then
   echo "build website data"
   mkdocs build --clean
   echo "transfer data to prod"
-  rsync -avz --delete site/ mikcyons@kissel.ch:/home/mikcyons/www/kissel.ch/wiki/
+  rsync -avz --delete site/ USER@kissel.ch:/home/mikcyons/www/kissel.ch/wiki/
 else
   echo ""
 fi
